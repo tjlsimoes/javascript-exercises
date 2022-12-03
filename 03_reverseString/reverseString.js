@@ -3,7 +3,7 @@ const reverseString = function(string) {
     let strlength = string.length;
 
     const stringArr = string.split();
-    const revStringArr = [new Array(strlength);]
+    const revStringArr = [];
 
 
     for (i = 0; i < strlength; i++) {
