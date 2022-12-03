@@ -12,7 +12,15 @@ const reverseString = function(string) {
 
     }
 
-    return revStringArr.toString();
+    let revwcomma = revStringArr.toString();
+
+    let revwoutcomma = revwcomma.replaceAll(",", "");
+
+    // Can not simply remove spaces. Initial string can contain spaces!!
+    
+    let revwoutcommaorspace = revwoutcomma.replaceAll(" ", "");
+
+    return revwoutcommaorspace;
 };
 
 // Do not edit below this line
