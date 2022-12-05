@@ -1,3 +1,18 @@
+const removeFromArray = function (arrayOr, tbremov) {
+
+    if (arrayOr.includes(tbremov)) {
+
+        let tbremovind = arrayOr.lastIndexOf(tbremov);
+
+        arrayOr.splice(tbremovind, 1);
+        return arrayOr;
+    } else {
+        return arrayOr;
+    }
+};
+
+
+/*
 const removeFromArray = function(arrayOr, tbremov) {
 
     function checkFtoL(matchone) {
@@ -6,19 +21,14 @@ const removeFromArray = function(arrayOr, tbremov) {
     
     }
     
-    function checkLtoF(matchlast) {
-    
-        return matchlast === tbremov;
-    
-    }
 
         
     let firstMatch = arrayOr.findIndex(checkFtoL);
-    let lastMatch = arrayOr.lastIndexOf(checkLtoF);
+    let lastMatch = arrayOr.lastIndexOf(tbremov);
 
     if (firstMatch === lastMatch) {
 
-        return arrayOr.splice(arrayOr[firstMatch]);
+        return arrayOr.splice(firstMatch);
 
     } else if (firstMatch !== lastMatch){
 
@@ -39,21 +49,6 @@ const removeFromArray = function(arrayOr, tbremov) {
         return arrayOr;
     }
 };
-
-
-/*
-function checkFtoL(matchone) {
-
-    return matchone === tbremov;
-
-}
-
-function checkLtoF(matchlast) {
-
-    return matchlast === tbremov;
-
-} 
-
 */
 // Do not edit below this line
 module.exports = removeFromArray;
