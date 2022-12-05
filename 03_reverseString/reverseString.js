@@ -15,13 +15,27 @@ const reverseString = function(string) {
     let revwcomma = revStringArr.toString();
 
     let revwoutcomma = revwcomma.replaceAll(",", "");
-
-    // Can not simply remove spaces. Initial string can contain spaces!!
     
-
-
     return revwoutcomma;
 };
 
 // Do not edit below this line
 module.exports = reverseString;
+
+/*
+
+Solution:
+
+There's a reverse function that can be applied to arrays!
+
+
+const reverseString = function(string) {
+ return string.split('').reverse().join('');
+};
+
+
+And this would work with strings that have commas in them!!
+
+
+module.exports = reverseString;
+*/
