@@ -2,8 +2,8 @@ const sumAll = function(invalue, fivalue) {
 
     const range = [];
 
-    if (invalue == NaN || invalue < 0 || 
-        fivalue == NaN || fivalue < 0 ||
+    if (isNaN(invalue) || invalue < 0 || 
+        isNaN(fivalue)|| fivalue < 0 ||
         typeof invalue === "string" ||
         typeof fivalue === "string"){
         
