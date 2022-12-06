@@ -19,5 +19,15 @@ const leapYears = function(year) {
 
 };
 
+/*
+Solution:
+
+const leapYears = function(year) {
+  return year % 4 === 0 && ( year % 100 !== 0 || year % 400 === 0);
+};
+
+Again: simpler and more elegant.
+*/
+
 // Do not edit below this line
 module.exports = leapYears;
